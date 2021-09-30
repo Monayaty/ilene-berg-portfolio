@@ -6,3 +6,13 @@ function openTab(tabName) {
 		  }
 		  document.getElementById(tabName).style.display = "block";  
 		}
+
+function onClickMenu() {
+	document.getElementById("menu").classList.toggle("change");
+  	var nav = document.getElementById("nav");
+  	if (nav.style.display === "block") {
+    nav.style.display = "none";
+  	} else {
+    nav.style.display = "block";
+  }
+}

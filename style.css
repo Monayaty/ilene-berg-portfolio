@@ -24,23 +24,89 @@ nav
 {
 	width: 80%;
 	margin: auto;
-	padding: 3px;
+	padding: 20px 0;
+	color: white;
+	overflow: auto;
+	position: relative;
+}
+nav .logo
+{
+	font-family: 'Bonheur Royale', cursive;
+	font-size: 30px;
+	font-weight: 600;
+	float: left;
+	width: 60%;
+	text-decoration: none;
 	color: white;
 }
 nav ul 
 {
 	list-style-type: none;
-	display: flex;
-	justify-content: space-between;
-	margin-right: 40px;
+	/*display: flex;
+	justify-content: space-between;*/
+	float: left;
+	width: 30%;
+	font-family: 'Poppins', sans-serif;
 }
-.logo
+
+nav ul li a 
 {
-	font-family: 'Bonheur Royale', cursive;
-	font-size: 30px;
-	font-weight: 600;
-	
+	float: left;
+	text-decoration: none;
+	margin-right: 20px;
+	padding-top: 5px;
+	padding-left: 25px;
+	color: white;
 }
+nav ul li a:hover
+{
+	color: #f3487f;
+	transition: 0.3s ease;
+}
+
+#menu{
+	position: absolute;
+	right: 60px;
+	width:25px;
+	height: 24px;
+	margin-top:12px;
+	cursor: pointer;
+}
+nav #nav
+{
+	padding: 0;
+	margin: 0 20px;
+	position: absolute;
+	right: 80px;
+	transition: 0.3s ease;
+	display: none;
+}
+.bar{
+	height: 3px;
+	width: 100%;
+	background-color: #fff;
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+#bar1{
+	transform: translateY(-4px);
+}
+#bar3{
+	transform: translateY(4px);
+}
+
+.change #bar1{
+	transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+	transform: translateY(-2px) rotate(45deg);
+}
+.change #bar2{
+	opacity: 0;
+}
+
+
 .home
 {
 	font-family: 'Poppins', sans-serif;
@@ -90,7 +156,7 @@ nav ul
 	width: 100%;
 	margin: 0;
 	padding-top: 20px;
-	height: 660px;
+	height: 720px;
 	font-family: 'Lato', sans-serif;
 	background-color: #f2f5f7;
 }
@@ -126,7 +192,7 @@ nav ul
 	width: 30%;
 	top: -25px;
 	margin-left: 25px;
-	margin-bottom: 25px;
+	margin-bottom: -25px;
 	float: left;
 }
 .glorious-history .history-content .tabs
@@ -196,7 +262,7 @@ nav ul
 {
 	width: 78%;
 	height: 100%;
-	margin: 0 auto;
+	margin: 0px auto;
 	background-color: white;
 	
 }
